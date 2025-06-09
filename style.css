@@ -1,0 +1,187 @@
+/* Base */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #0f0f0f;
+    color: #fff;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    padding: 20px;
+    background: rgb(0, 0, 0);
+    border-bottom: #d2a666 3px solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#branding h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #fff;
+    padding-left: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Section Acceuil */
+#Acceuil {
+    min-height: 60vh;
+    background: url("1027_8a2838b009b965110adc215b972fa918-02_11_2024\ 08_42_12.jpg") no-repeat center center / cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+#Acceuil h2 {
+    font-size: 2.5rem;
+    margin: 0 0 10px 0;
+}
+
+#Acceuil p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color :black;
+    background-color: #d2a666;
+}
+
+/* Sections Générales */
+section {
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: brown;
+    margin-bottom: 10px;
+}
+
+section h3 {
+    font-size: 1.2rem;
+    color: brown;
+}
+
+section p {
+    font-size: 1.1rem;
+}
+
+/* Portfolio vidéo */
+.swiper-slide video {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+/* Bouton */
+#bouton {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #d2a666;
+    font-size: 1.2rem;
+    border-radius: 20px 20px 0 0;
+    color: #0f0f0f;
+}
+
+/* Liens */
+a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #000000;
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Footer */
+#footer {
+    text-align: center;
+    background: white;
+    border-radius: 0 0 20px 20px;
+    border-bottom: #d2a666 3px solid;
+    padding: 10px;
+    color: black;
+    
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    #branding h1 {
+        font-size: 1.5rem;
+        padding-left: 5px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul li {
+        padding: 10px;
+    }
+
+    #Acceuil h2 {
+        font-size: 2rem;
+    }
+
+    #Acceuil p {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+
+    #bouton {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #Acceuil h2 {
+        font-size: 1.6rem;
+    }
+
+    #Acceuil p {
+        font-size: 0.95rem;
+    }
+
+    #bouton {
+        font-size: 1rem;
+        padding: 15px;
+    }
+}
